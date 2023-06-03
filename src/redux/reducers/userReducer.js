@@ -1,5 +1,7 @@
-// İmportlar
+
 /* import axios from 'axios'; */
+import { toast } from 'react-toastify';
+
 import userData from '../userData';
 // Action tipleri
 export const FETCH_USERS_SUCCESS = 'FETCH_USERS_SUCCESS';
@@ -76,6 +78,7 @@ const userReducer = (state = initialState, action) => {
                 users: action.payload,
             };
         case UPDATE_USER_SUCCESS:
+            toast.success('User updated successfully'); // Tostify success notification
             return {
                 ...state,
                 users: state.users.map((user) =>
@@ -83,6 +86,7 @@ const userReducer = (state = initialState, action) => {
                 ),
             };
         case DELETE_USER_SUCCESS:
+            toast.success('User deleted successfully'); // Tostify success notification
             return {
                 ...state,
                 users: state.users.filter((user) => user.id !== action.payload),
@@ -93,3 +97,4 @@ const userReducer = (state = initialState, action) => {
 };
 
 export default userReducer;
+

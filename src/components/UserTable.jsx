@@ -38,11 +38,10 @@ function UserTable() {
                 (number) => (
                     <li key={number}>
                         <button
-                            className={`h-10 px-5 text-white transition-colors  duration-150 mx-2 rounded-lg ${
-                                currentPage === number
+                            className={`h-10 px-5 text-white transition-colors  duration-150 mx-2 rounded-lg ${currentPage === number
                                     ? "bg-blue-600 border border-r-0 text-black border-blue-600 focus:shadow-outline"
                                     : "focus:shadow-outline text-black bg-blue-600   hover:bg-blue-200"
-                            }`}
+                                }`}
                             onClick={() => paginate(number)}
                         >
                             {number}
@@ -68,17 +67,16 @@ function UserTable() {
                 {number === "..." ? (
                     <span className="h-10 px-5 text-black">...</span>
                 ) : (
-                        <button
-                            className={`h-10 px-5 text-black transition-colors duration-150 mx-2 rounded-lg ${
-                                currentPage === number
-                                    ? "bg-blue-600 border border-r-0 text-white border-blue-600 focus:shadow-outline"
-                                    : "focus:shadow-outline  hover:bg-blue-200"
+                    <button
+                        className={`h-10 px-5 text-black transition-colors duration-150 mx-2 rounded-lg ${currentPage === number
+                                ? "bg-blue-600 border border-r-0 text-white border-blue-600 focus:shadow-outline"
+                                : "focus:shadow-outline  hover:bg-blue-200"
                             }`}
-                            onClick={() => paginate(number)}
-                        >
-                            {number}
-                        </button>
-                    )}
+                        onClick={() => paginate(number)}
+                    >
+                        {number}
+                    </button>
+                )}
             </li>
         ));
     };
@@ -123,11 +121,11 @@ function UserTable() {
                     <tbody className="w-full">
                         {currentItems.map((user, key) => (
                             <tr key={user.id}>
-                                <NavLink key={key} to={`/users/${user.id}`}>
-                                    <td className="px-4 py-2 border-b hover:text-blue-500">
+                                <td className="px-4 py-2 border-b hover:text-blue-500">
+                                    <NavLink key={key} to={`/users/${user.id}`}>
                                         {user.name}
-                                    </td>
-                                </NavLink>
+                                    </NavLink>
+                                </td>
                                 <td className="px-4 py-2 border-b">{user.email}</td>
                                 <td className="px-4 py-2 border-b">{user.phone}</td>
                                 <td className="px-4 py-2 border-b text-center">
