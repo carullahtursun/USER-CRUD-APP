@@ -1,5 +1,5 @@
 import userData from '../userData'; // Import your users data here
-
+import { toast } from 'react-toastify';
 // Action types
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_FAILURE = 'LOGIN_FAILURE';
@@ -22,21 +22,28 @@ export const login = (email, password) => async (dispatch) => {
                 type: LOGIN_SUCCESS,
                 payload: user,
             });
+            toast.success('Login successful');
+            
         } else {
             throw new Error('Invalid email or password');
+           
         }
     } catch (error) {
         dispatch({
             type: LOGIN_FAILURE,
             payload: error.message,
         });
+        toast.error('Login failed');
     }
 };
 
 // Logout işlemi
-export const logout = () => ({
+export const logout = () => (
+    {
     type: LOGOUT,
-});
+}
+
+);
 
 // İlk durum
 const initialState = {

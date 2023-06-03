@@ -44,14 +44,14 @@ function Login() {
                     <p className="text-gray-600 text-2xl font-bold">Log in to your account</p>
                     <p className="text-gray-400">Welcome back! Please enter your details</p>
 
-                    <p className="text-gray-600 text-2xl font-bold">email: janesmith@example.com</p>
-                    <p className="text-gray-600 text-2xl font-bold">password: pass4321</p>
                 </div>
+                    <p className="text-gray-600 text-sm font-bold">email:   janesmith@example.com</p>
+                    <p className="text-gray-600 text-sm font-bold">password: pass4321</p>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-4">
                     <div className="flex flex-col mb-4">
                         <label htmlFor="email" className="mb-2 font-medium text-gray-700">
-                            Email Address
+                            Email
                         </label>
                         <input
                             type="email"
