@@ -12,7 +12,7 @@ function UserUpdate() {
                 <button
                     className="flex items-center space-x-2 px-4 py-2 rounded-lg  "
                     onClick={() => {
-                        navegate('/users');
+                        navegate('/');
                     }}
                 >
                     <AiOutlineArrowLeft className="h-5 w-5 text-gray-500"/> 

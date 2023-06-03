@@ -7,6 +7,8 @@ import Home from './pages/Home'
 import UserUpdate from './components/UserUpdate'
 import { useSelector } from 'react-redux'
 import Login from './pages/Login'
+import Projects from './layouts/Projects'
+import Tasks from './layouts/Tasks'
 
 function App() {
   const user = useSelector(store => store.auth.user)
@@ -22,7 +24,9 @@ const navigate = useNavigate()
         <Route path="/login" element={<Login/>} />
         <Route element={<Layout />} >
           <Route path="/" element={< Users/>} />
-          <Route path="/users" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/tasks" element={< Tasks/>} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/users/:id" element={<UserUpdate />} />
         </Route>
       </Routes>
