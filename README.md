@@ -1,43 +1,42 @@
-# User CRUD Projesi
-Bu proje, kullanıcılarla ilgili temel  ( Read, Update, Delete) 
-işlemlerini gerçekleştiren bir web uygulamasıdır. Kullanıcılar, adlarını, e-posta adreslerini ve diğer bilgilerini  güncelleyebilir, görüntüleyebilir ve silebilirler.
+# User CRUD Project
+This project is a web application that performs basic CRUD (Create, Read, Update, Delete) operations related to users. Users can update, view, and delete their names, email addresses, and other information.
 
 ![image](https://github.com/carullahtursun/USER_CRUD_APP/assets/62027425/fb614b8a-c281-4453-96b4-6e71789c23fd)
 
 
-## Özellikler
-- kullanıcılar, e-posta adresleri ve şifreleri ile giriş yapabilir.
-- kullanıcılar, eklenen kullanıcıları görüntüleyebilir, güncelleyebilir ve silebilirler.
-- hata yönetimi ve hata mesajlarının gösterimi için kullanıcı dostu bir arayüz sağlanmıştır.
-- Uygulama, kullanıcı verilerini statik userData Josn alır, giriş yaparken orda kontrol sağlanır.
+## Features
+- Users can log in with their email addresses and passwords.
+- Users can view, update, and delete added users.
+- User-friendly interface is provided for error handling and displaying error messages.
+- The application retrieves user data from a static userData JSON and performs validation during login.
 
-## Kurulum
-1. Bu projeyi bilgisayarınıza klonlayın:
+## Installation
+1. Clone this project to your computer:
   ``` bash
-  git clone https://github.com/kullaniciadi/crud-uygulamasi.git
+  git clone https://github.com/carullahtursun/USER_CRUD_APP.git
   ```
- 
-2 Gerekli paketleri yükleyin:
+2 Install the required packages:
   ``` bash
   npm install
   ```
   
-3 Projeyi başlatın:
+3 Start the project:
   ``` bash
   npm run dev
   ```
-1. Tarayıcınızda http://127.0.0.1:5173 adresine giderek uygulamayı görüntüleyin.
+1. Open http://127.0.0.1:5173 in your browser to view the applicatio
 
-## Kullanım
-- Uygulama başlatıldığında, login sayfası açılır.
-- kullanıcı kendi email ve şifresi ile giriş yapabilir.
-- kullanıcı güncelleme yapmak için listede bulunan kullanıcı adına tıklaması yeterlıdır.
-- kullanıcı güncelleme veya silme işlemleri için kullanıcı listesindeki ilgili düğmeleri tıklayabilir 
-- güncelleme veya silme işlemleri tamamlandığında, kullanıcıya bilgilendirme mesajları gösterilir.
-## Teknolojiler ve Kütüphaneler
-- React: Web uygulaması oluşturmak için JavaScript kütüphanesi
-- React Router: Sayfa yönlendirmeleri için kullanılır
-- React Hook Form: Form yönetimi için kullanılır
-- Redux: Uygulama durumu yönetimi için kullanılır
-- Yup: Şema tabanlı doğrulama için kullanılır
-- Tailwind CSS: UI tasarımı için kullanılır
+## Usage
+- When the application is launched, the login page opens.
+- Users can log in with their email and password.
+- To update a user, the user can simply click on the user's name in the list.
+- To update or delete a user, the user can click on the respective buttons in the user list.
+- When update or delete operations are completed, the user is shown informative messages.
+## Technologies and Libraries
+
+- React: JavaScript library for building web applications
+- React Router: Used for page routing
+- React Hook Form: Used for form management
+- Redux: Used for application state management
+- Yup: Used for schema-based validation
+- Tailwind CSS: Used for UI design
