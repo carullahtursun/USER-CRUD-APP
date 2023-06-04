@@ -1,4 +1,4 @@
-# User Update Projesi
+# User CRUD Projesi
 Bu proje, kullanıcılarla ilgili temel  ( Read, Update, Delete) 
 işlemlerini gerçekleştiren bir web uygulamasıdır. Kullanıcılar, adlarını, e-posta adreslerini ve diğer bilgilerini  güncelleyebilir, görüntüleyebilir ve silebilirler.
 
